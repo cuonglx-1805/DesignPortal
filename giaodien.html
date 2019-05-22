@@ -12,133 +12,135 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="">
-            <div class="menu">
-                <a href="#" id="pull">DANH MỤC</a>
-                <nav class="clearfix">
-                    <div class="row">
-                        <div class="col-xl-3">
-                            <img class="logo" src="img/sun.png">
-                        </div>
-                        <div class="col-xl-6">
-                            <ul class="UL_Menu_Index">
-                                <li class="Li_Menu">
-                                    <a  class="A_Menu" href='#'>Trang chủ
-                                    </a>
+    <div id="header" class="headroom header--fixed">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <div class="d-flex justify-content-left">
+                <a class="navbar-brand" href="#"><img class="logo" src="img/sun.png"></a>
+            </div> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="col-xl-3">
+                    <div class="d-flex justify-content-center">
+                        <a class="navbar-brand" href="#"><img class="logo" src="img/sun.png"></a>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <ul class="navbar-nav mr-0 mt-2 mt-lg-0">
+                        <li class="Li_Menu">
+                            <a  class="A_Menu" href='#'>Trang chủ
+                            </a>
+                        </li>
+                        <li class="Li_Menu">
+                            <span class="BorderGradient"></span>
+                            <a class="A_Menu" href='#'>Giới thiệu</a>
+                            <ul class="UL_Menu_1 UL_News">
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='$'>Quá trình phát triển</a>
                                 </li>
-                                <li class="Li_Menu">
-                                    <span class="BorderGradient"></span>
-                                    <a class="A_Menu" href='#'>Giới thiệu</a>
-                                    <ul class="UL_Menu_1 UL_News">
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='$'>Quá trình phát triển</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Sự kiện hàng năm</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="Li_Menu">
-                                    <span class="BorderGradient"></span>
-                                    <a class="A_Menu" href='#'>Sơ đồ tổ chức</a>
-                                    <ul class="UL_Menu_1 UL_News">
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Bộ phận hr</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Bộ phận human</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Bộ phận div 1</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Bộ phận div 2</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Bộ phận div 3</a>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li class="Li_Menu">
-                                    <span class="BorderGradient"></span>
-                                    <a class="A_Menu" href='#'>Câu lạc bộ</a>
-                                    <ul class="UL_Menu_1 UL_News">
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'  target='_blank'>Bóng đá</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'  target='_blank'>cầu lông</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'  target='_blank'>vẽ vời</a>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li class="Li_Menu">
-                                    <span class="BorderGradient"></span>
-                                    <a class="A_Menu" href='#'>Sơ đồ văn phòng</a>
-                                    <ul class="UL_Menu_1 UL_News">
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Văn phòng kangnam</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Văn phòng Handico</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#x'>Văn phòng Tong</a>
-                                        </li>
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#x'>Văn phòng Đà Nẵng</a>
-                                        </li>
-                                    </ul> 
-                                </li>
-                                <li class="Li_Menu">
-                                    <span class="BorderGradient"></span>
-                                    <a class="A_Menu" href='#'>Vấn đề</a>
-                                    <ul class="UL_Menu_1 UL_News">
-                                        <li class="LI_Menu_1">
-                                            <a class="A_Menu_1" href='#'>Câu hỏi</a>
-                                        </li>  
-                                    </ul> 
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Sự kiện hàng năm</a>
                                 </li>
                             </ul>
-                        </div>
-                        <div class="col-xl-3">
-                            <div class="row">
-                                <div class="col-xl-2">
-                                    <div class="header-li" title="Language">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><img src="img/vietnam.png" class="image-flag-be" id="myImage"></span></a>
-                                        <ul class="dropdown-menu language">
-                                            <li class="ropdown-item">
-                                                <a href="/change-lang/vi" class="text-i18n" data-img="img/images/vietnam.png" data-lang="vi">
-                                                    <img class="image-choose" src="img/vietnam.png"><span>VietNam</span>
-                                                </a>
-                                            </li>
-                                            <li class="ropdown-item">
-                                                <a href="/change-lang/jp" class="text-i18n" data-img="img/images/nhatban.png" data-lang="jp">
-                                                    <img class="image-choose" src="img/nhatban.png"><span>日本語</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-xl-2">
-                                    <div class="top-notification">
-                                        <i class="fa fa-bell fa-2g" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4">
-                                    <img class="people" src="img/people.png">
-                                </div>
+                        </li>
+                        <li class="Li_Menu">
+                            <span class="BorderGradient"></span>
+                            <a class="A_Menu" href='#'>Sơ đồ tổ chức</a>
+                            <ul class="UL_Menu_1 UL_News">
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Bộ phận hr</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Bộ phận human</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Bộ phận div 1</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Bộ phận div 2</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Bộ phận div 3</a>
+                                </li>
+                            </ul> 
+                        </li>
+                        <li class="Li_Menu">
+                            <span class="BorderGradient"></span>
+                            <a class="A_Menu" href='#'>Câu lạc bộ</a>
+                            <ul class="UL_Menu_1 UL_News">
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'  target='_blank'>Bóng đá</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'  target='_blank'>cầu lông</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'  target='_blank'>vẽ vời</a>
+                                </li>
+                            </ul> 
+                        </li>
+                        <li class="Li_Menu">
+                            <span class="BorderGradient"></span>
+                            <a class="A_Menu" href='#'>Sơ đồ văn phòng</a>
+                            <ul class="UL_Menu_1 UL_News">
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Văn phòng kangnam</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Văn phòng Handico</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#x'>Văn phòng Tong</a>
+                                </li>
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#x'>Văn phòng Đà Nẵng</a>
+                                </li>
+                            </ul> 
+                        </li>
+                        <li class="Li_Menu">
+                            <span class="BorderGradient"></span>
+                            <a class="A_Menu" href='#'>Vấn đề</a>
+                            <ul class="UL_Menu_1 UL_News">
+                                <li class="LI_Menu_1">
+                                    <a class="A_Menu_1" href='#'>Câu hỏi</a>
+                                </li>  
+                            </ul> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3">
+                    <div class="d-flex justify-content-left">
+                        <div class="menu-right">
+                            <div class="header-li" title="Language">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><img src="img/vietnam.png" class="image-flag-be" id="myImage"></span></a>
+                                <ul class="dropdown-menu language">
+                                    <li class="ropdown-item">
+                                        <a href="/change-lang/vi" class="text-i18n" data-img="img/images/vietnam.png" data-lang="vi">
+                                            <img class="image-choose" src="img/vietnam.png"><span>VietNam</span>
+                                        </a>
+                                    </li>
+                                    <li class="ropdown-item">
+                                        <a href="/change-lang/jp" class="text-i18n" data-img="img/images/nhatban.png" data-lang="jp">
+                                            <img class="image-choose" src="img/nhatban.png"><span>日本語</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                        <div class="menu-right">
+                            <div class="top-notification">
+                                <i class="fa fa-bell fa-2g" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="menu-right">
+                            <img class="people" src="img/people.png">
+                        </div>
                     </div>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </div>
-    <!--End Header-->
 
     <div class="bannertk">
         <div class="ms-webpart-zone ms-fullWidth">
@@ -339,6 +341,7 @@
             </div>
         </div>
     </div>
+
     <div class="content">
         <div class="row">
             <div class="col-xl-3">
@@ -481,7 +484,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-xl-6">
                 <div class="wrapper-search">
                     <div class="main-content">
@@ -670,9 +673,15 @@
             </div>
         </div>
     </footer>
-    <!--End Footer-->
-    <!--------------end------------------>
 
     <div style="display: none;"></div>
+
+    <div id="back-to-top" class="back-to-top" data-toggle="tooltip" data-placement="left">
+        <span class="arrow">
+            <img src="img/muiten.png">
+        </span>
+    </div>
 </body>
 </html>
+<script type="text/javascript" src="jquery/headroom.min.js"></script>
+<script type="text/javascript" src="jquery/headroom.js"></script>

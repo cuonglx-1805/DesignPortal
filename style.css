@@ -83,6 +83,14 @@ ul li, ol li {
   position: relative;
 }
 
+.menu-center {
+  text-align: center;
+}
+
+.menu-center .navbar-nav {
+  display: inline-block;
+}
+
 .UL_Menu_Index {
   float: left;
   width: 100%;
@@ -1575,13 +1583,16 @@ ul li, ol li {
       width: 100%;
     }
     .A_Menu {
-      padding: 0px 17px;
+      padding: 0px 10px;
     }
-    .content_left {
-      width: 75%;
+    .menu-right {
+      margin-left: 20px;
     }
-    .content_right {
-      width: 24%;
+    .content-left {
+      margin: 1% 0% 0% 1% !important;
+    }
+    .content-right {
+      margin: 1% 1% 0% 0% !important;
     }
     .content_leftnew {
       width: 24%;
@@ -1596,6 +1607,12 @@ ul li, ol li {
     }
   }
   @media screen and (max-width: 1080px) {
+    .content-left {
+      margin: 1% 0% 0% 2% !important;
+    }
+    .content-right {
+      margin: 1% 2% 0% 0% !important;
+    }
     .timkiem_text {
       width: 400px;
     }
@@ -1621,12 +1638,21 @@ ul li, ol li {
   }
   /*Ipad horizontal - 1024*/
   @media screen and (max-width: 1024px) {
+    .content-left {
+      margin: 1% 0% 0% 2% !important;
+    }
+    .content-right {
+      margin: 1% 2% 0% 0% !important;
+    }
     .tracuu_box_text {
       float: left;
       width: 80%;
     }
     .header_top_en {
       height: 151px;
+    }
+    .menu-right {
+      margin-left: 20px;
     }
     .thongke_ico {
       width: 42%;
@@ -1668,6 +1694,12 @@ ul li, ol li {
     }
   }
   @media screen and (max-width: 980px) {
+    .content-left {
+      margin: 1% 0% 0% 3% !important;
+    }
+    .content-right {
+      margin: 1% 3% 0% 0% !important;
+    }
     .A_Menu {
       min-width: 20px;
       font-size: 15px;
@@ -1703,17 +1735,23 @@ ul li, ol li {
       height: 410px !important;
     }
     .bx-wrapper img {
-      height: 410px;
+      height: 400px;
       width: auto;
     }
     .mnlk {
-      height: 186px;
+      width: 100%;
+      float: left;
+      position: relative;
+      height: 60px;
+      background: #E6E6E6;
     }
     .mnlienket {
       top: 0px;
-      background: none;
+      /*background: none;*/
+      width: 100%;
+      position: relative;
+      top: -70px;
     }
-
     .footer_bq {
       width: 96%;
       margin: 0px 0% 0px 4%;
@@ -1729,10 +1767,14 @@ ul li, ol li {
     }
   }
   @media screen and (max-width: 900px) {
+    .content-left {
+      margin: 1% 0% 0% 1% !important;
+    }
+    .content-right {
+      margin: 1% 1% 0% 0% !important;
+    }
     .A_Menu {
-      padding: 0px 2px;
-      min-width: 20px;
-      font-size: 15px;
+      font-size: 13px;
     }
     .timkiem_text {
       width: 210px;
@@ -1747,6 +1789,12 @@ ul li, ol li {
     }
   }
   @media screen and (max-width: 800px) {
+    .content-left {
+      margin: 1% 0% 0% 1% !important;
+    }
+    .content-right {
+      margin: 1% 1% 0% 0% !important;
+    }
     .footer_left {
       width: 100%;
     }
@@ -1944,6 +1992,9 @@ ul li, ol li {
       height: auto;
       float: left;
     }
+    .left-bot {
+      margin-top: 0px !important;
+    }
     nav {
       height: auto;
     }
@@ -2063,7 +2114,7 @@ ul li, ol li {
       margin-right: 0px;
     }
     .mnlk {
-      height: 372px;
+      height: 200px;
     }
     .jcarouse ul li {
       width: 233px !important;
@@ -2148,7 +2199,7 @@ ul li, ol li {
       margin-right: 0px;
     }
     .mnlk {
-      height: 372px;
+      height: 200px;
     }
     .jcarouse ul li {
       width: 190px !important;
@@ -2264,7 +2315,7 @@ ul li, ol li {
       margin-right: 0px;
     }
     .mnlk {
-      height: 558px;
+      height: 340px;
     }
     .jcarouse ul li {
       width: 210px !important;
@@ -2366,7 +2417,7 @@ ul li, ol li {
   }
 
   .top-notification i {
-    color: black;
+    color: #585858;
     font-size: 18px;
   }
 
